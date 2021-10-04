@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC6_Mod5_Act1.BatteryPage">
+    
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Battery Status"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="Large" 
+                   TextColor="GhostWhite" FontAttributes="Bold"/>
+
+            <Label  x:Name="BatteryLevel"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                      TextColor="Wheat" FontAttributes="Bold"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

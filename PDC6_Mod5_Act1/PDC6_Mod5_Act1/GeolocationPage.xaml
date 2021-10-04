@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC6_Mod5_Act1.GeolocationPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="Blue" Padding="24" CornerRadius="0">
+
+            <Label Text="Geolocation" HorizontalTextAlignment="Center" TextColor="Wheat"/>
+        </Frame>
+        
+        
+        <Button Text="Get Location" Clicked="Button_Clicked"/>
+        <Button Text="Stop getting Location" Clicked="Button_Clicked_1"/>
+
+        <Label x:Name="resultLocation"/>
+    </StackLayout>
+
+</ContentPage>

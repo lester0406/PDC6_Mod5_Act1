@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC6_Mod5_Act1.GeocodingPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
+            <Label Text="Geocoding: " />
+            <Label Text="Latituded: " />
+            <Entry Keyboard="Numeric" Text="{Binding Latitude}"/>
+            <Label Text="Longitude: "/>
+            <Entry Keyboard="Numeric" Text="{Binding Longtitude}"/>
+
+            <Button Command="{Binding GetAddressCommand}"
+                    IsEnabled="{Binding IsNotBusy}"
+                    Text="Detect Address"/>
+            <Label Text="Reverse Geocoding: "/>
+            <Label Text="Address: " />
+            <Entry Text="{Binding Address}"/>
+
+            <Button
+                Command="{Binding GetPositoinCommand}"
+                IsEnabled="{Binding IsNotBusy}"
+                Text="Detect Location"/>
+            <Label Text="{Binding GeocodePosition}"/>
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
